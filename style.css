@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'montserrat';
+    width: 100vw;
+    height: 100vh;
+    background-color:  hwb(32 89% 5%);
+    padding: 25px 10px;
+}
+.whole{
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    height: 100%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+    padding:19px;
+    /* gap: px; */
+}
+img{
+    width: 100%;
+    border-radius: inherit;
+}
+.desk{
+    display: none;
+}
+.image{
+    border-radius:10px 10px 0px 0px;
+    height: 45%;
+}
+/* .exp{ */
+    /* margin-bottom: ; */
+/* } */
+.frnc{
+    font-family: "Fraunces";
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+
+}
+#cart{
+    width:20px;
+    height: 20px;
+}
+h2{
+    color: hsl(158, 36%, 37%);
+}
+.perf{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#cancl{
+    text-decoration: line-through;
+}
+.grey{
+    color: hsl(228, 12%, 48%);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width:765px){
+    body{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .whole{
+        display: flex;
+        width: 50%;
+        height: 65vh;
+        margin: auto;
+    }
+    .content{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+
+    }
+    button{
+        width: 100%;
+        height: 40px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color:  hsl(158, 84%, 15%);
+    }
+    .mobile{
+        display: none;
+    }
+    .desk{
+        display: block;
+    }
+    .image{
+        border-radius:10px 0px 0px 10px;
+        width: 50%;
+        height: inherit;
+        height: 100%;
+    }
+    img{
+        height:100%;
+    }
+    
+}
